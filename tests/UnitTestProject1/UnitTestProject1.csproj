@@ -51,6 +51,7 @@
     <Compile Include="KDiffPairsTests.cs" />
     <Compile Include="LongestSubstringTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search2DMatrixTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
