@@ -43,6 +43,7 @@
     <Compile Include="AddArrays.cs" />
     <Compile Include="BuyAndSellStocks.cs" />
     <Compile Include="KDiffPairs.cs" />
+    <Compile Include="LengthOfLastWord.cs" />
     <Compile Include="LongestSubstring.cs" />
     <Compile Include="NumberOfIslands.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

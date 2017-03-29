@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="BuyAndSellStocksTests.cs" />
     <Compile Include="KDiffPairsTests.cs" />
+    <Compile Include="LengthOfLastWordTests.cs" />
     <Compile Include="LongestSubstringTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Search2DMatrixTests.cs" />
