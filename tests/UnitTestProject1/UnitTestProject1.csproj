@@ -48,6 +48,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BuyAndSellStocksTests.cs" />
     <Compile Include="KDiffPairsTests.cs" />
     <Compile Include="LongestSubstringTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
