@@ -49,6 +49,7 @@
     <Compile Include="NumberOfIslands.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Search2DMatrix.cs" />
+    <Compile Include="TotalHammingDistance.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

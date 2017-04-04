@@ -55,6 +55,7 @@
     <Compile Include="LongestSubstringTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Search2DMatrixTests.cs" />
+    <Compile Include="TotalHammingDistanceTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
