@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BuyAndSellStocksTests.cs" />
+    <Compile Include="ContainerWithMostWaterTests.cs" />
     <Compile Include="KDiffPairsTests.cs" />
     <Compile Include="LengthOfLastWordTests.cs" />
     <Compile Include="LongestSubstringTests.cs" />

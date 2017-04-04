@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="AddArrays.cs" />
     <Compile Include="BuyAndSellStocks.cs" />
+    <Compile Include="ContainerWithMostWater.cs" />
     <Compile Include="KDiffPairs.cs" />
     <Compile Include="LengthOfLastWord.cs" />
     <Compile Include="LongestSubstring.cs" />
