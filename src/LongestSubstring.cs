@@ -3,6 +3,9 @@ using System.Linq;
 
 namespace LeetCode
 {
+	/// <summary>
+	/// https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
+	/// </summary>
 	public class LongestSubstring
 	{
 		public static int LengthOfLongestSubstring(string s)

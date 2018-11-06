@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace LeetCode
 {
+	/// <summary>
+	/// https://leetcode.com/problems/number-of-islands/description/
+	/// </summary>
 	public class NumberOfIslands
 	{
 		public static int NumIslands(char[,] grid)

@@ -2,6 +2,9 @@
 
 namespace LeetCode
 {
+	/// <summary>
+	/// https://leetcode.com/problems/length-of-last-word/
+	/// </summary>
 	public class LengthOfLastWord
 	{
 		public static int FindLengthOfLastWord(string s)

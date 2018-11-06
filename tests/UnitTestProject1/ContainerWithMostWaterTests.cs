@@ -32,7 +32,7 @@ namespace UnitTestProject1
 
 		void InternalTest(int[] height, int expected)
 		{
-			int value = ContainerWithMostWater.MaxArea(height);
+			int value = ContainerWithMostWater.SmartMaxArea(height);
 			Assert.AreEqual<int>(expected, value, $"Expected: {expected}, got {value}");
 		}
 	}

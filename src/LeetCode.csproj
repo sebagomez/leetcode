@@ -50,6 +50,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Search2DMatrix.cs" />
     <Compile Include="TotalHammingDistance.cs" />
+    <Compile Include="WordLadderII.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

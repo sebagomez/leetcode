@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace LeetCode
 {
+	/// <summary>
+	/// https://leetcode.com/problems/search-a-2d-matrix/
+	/// </summary>
 	public class Search2DMatrix
 	{
 		public static bool SearchMatrix(int[,] matrix, int target)

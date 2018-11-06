@@ -3,6 +3,9 @@ using System.Linq;
 
 namespace LeetCode
 {
+	/// <summary>
+	/// https://leetcode.com/problems/k-diff-pairs-in-an-array/description/
+	/// </summary>
 	public class KDiffPairs
 	{
 		public static int FindPairs(int[] nums, int k)
