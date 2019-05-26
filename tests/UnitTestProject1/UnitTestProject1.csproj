@@ -51,6 +51,7 @@
     <Compile Include="MinimumHeightTreesTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Search2DMatrixTests.cs" />
+    <Compile Include="Searching\SearchingTests.cs" />
     <Compile Include="Sorting\SortingTests.cs" />
     <Compile Include="TotalHammingDistanceTests.cs" />
     <Compile Include="WordLadderIITests.cs" />

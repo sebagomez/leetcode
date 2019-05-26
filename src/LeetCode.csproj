@@ -52,6 +52,7 @@
     <Compile Include="NumberOfIslands.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Search2DMatrix.cs" />
+    <Compile Include="Searching\Binary.cs" />
     <Compile Include="Sorting\Bubble.cs" />
     <Compile Include="Sorting\Merge.cs" />
     <Compile Include="Sorting\Quick.cs" />
