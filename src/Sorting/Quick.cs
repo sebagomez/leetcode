@@ -4,12 +4,15 @@
 	{
 		public static int[] Sort(int[] arr)
 		{
+			if (arr == null || arr.Length == 0)
+				return arr;
+
 			return QuickSort(arr, 0, arr.Length - 1);
 		}
 
 		static int[] QuickSort(int[] arr, int left, int right)
 		{
-			if (right < left)
+			if (left == right)
 				return arr;
 
 			int originalLeft = left;
@@ -25,20 +28,25 @@
 					right--;
 
 				if (left <= right)
-				{
-					int aux = arr[right];
-					arr[right] = arr[left];
-					arr[left] = aux;
-					left++;
-					right--;
-				}
+					Swap(arr, left, right);
 
+				left++;
+				right--;
 			}
 
-			QuickSort(arr, originalLeft, pivotPos);
-			QuickSort(arr, pivotPos + 1, originalRight);
+			if (pivotPos != originalRight)
+				QuickSort(arr, originalLeft, pivotPos);
+			if (pivotPos != originalLeft)
+				QuickSort(arr, pivotPos, originalRight);
 
 			return arr;
+		}
+
+		static void Swap(int[] arr, int a, int b)
+		{
+			int aux = arr[a];
+			arr[a] = arr[b];
+			arr[b] = aux;
 		}
 	}
 }

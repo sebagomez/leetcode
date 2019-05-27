@@ -42,6 +42,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AmazonShiftedTests.cs" />
     <Compile Include="BuyAndSellStocksTests.cs" />
     <Compile Include="ContainerWithMostWaterTests.cs" />
     <Compile Include="KDiffPairsTests.cs" />

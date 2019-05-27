@@ -12,10 +12,9 @@
 			if (left > right)
 				return -1;
 
-			int mid = 0;
 			while (right >= left)
 			{
-				mid = (left + right) / 2;
+				int mid = (left + right) / 2;
 				if (arr[mid] == search)
 					return mid;
 
