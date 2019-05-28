@@ -45,6 +45,7 @@
     <Compile Include="AmazonShifted.cs" />
     <Compile Include="BuyAndSellStocks.cs" />
     <Compile Include="ContainerWithMostWater.cs" />
+    <Compile Include="IntToRoman.cs" />
     <Compile Include="KDiffPairs.cs" />
     <Compile Include="KLargestElementInArray.cs" />
     <Compile Include="LengthOfLastWord.cs" />
@@ -52,6 +53,8 @@
     <Compile Include="MinimumHeightTrees.cs" />
     <Compile Include="NumberOfIslands.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReverseInteger.cs" />
+    <Compile Include="RomanToInt.cs" />
     <Compile Include="Search2DMatrix.cs" />
     <Compile Include="Searching\Binary.cs" />
     <Compile Include="Sorting\Bubble.cs" />

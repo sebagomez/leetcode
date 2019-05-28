@@ -13,7 +13,6 @@ namespace UnitTestProject1.Sorting
 			Bubble.Sort,
 			Selection.Sort,
 			Merge.Sort,
-			Quick.SortRecursive,
 			Quick.Sort
 		};
 
