@@ -50,6 +50,7 @@
     <Compile Include="KLargestElementInArrayTests.cs" />
     <Compile Include="LengthOfLastWordTests.cs" />
     <Compile Include="LongestSubstringTests.cs" />
+    <Compile Include="MergeKSortedListTests.cs" />
     <Compile Include="MinimumHeightTreesTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReverseIntegerTests.cs" />
