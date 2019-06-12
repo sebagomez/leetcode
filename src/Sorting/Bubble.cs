@@ -7,7 +7,7 @@
 			int l = arr.Length;
 			for (int k = 0; k < l; k++)
 			{
-				for (int i = 0; i < arr.Length - 1; i++)
+				for (int i = 0; i < l- 1; i++)
 				{
 					if (arr[i] > arr[i + 1])
 					{
