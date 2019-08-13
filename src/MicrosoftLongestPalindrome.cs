@@ -3,12 +3,12 @@
 namespace LeetCode
 {
     public class MicrosoftLongestPalindrome
-	{
-		public static string LongestPalindrome(string text)
-		{
+    {
+        public static string LongestPalindrome(string text)
+        {
             Dictionary<int, int> p = new Dictionary<int, int>();
-			for (int i = 0; i < text.Length; i++)
-			{
+            for (int i = 0; i < text.Length; i++)
+            {
                 if (i == 0 || i == text.Length - 1)
                 {
                     p[i] = 1;
@@ -36,10 +36,10 @@ namespace LeetCode
                     else
                     {
                         p[left] = (right - left) + 1;
-                        
+
                     }
                 }
-			}
+            }
 
 
             int max = 0;
@@ -54,18 +54,20 @@ namespace LeetCode
             }
 
             return text.Substring(index, max);
-		}
+        }
 
-		public static bool IsPalindrome(string text)
-		{
-			for (int i = 0; i < text.Length; i++)
-			{
-				int j = text.Length - 1 - i;
-				if (text[i] != text[j])
-					return false;
-			}
-
-			return true;
-		}
-	}
+        public static bool IsPalindrome(string text)
+        {
+            int m = 0;
+            int n = text.Length - 1;
+            while (m < n)
+            {
+                if (text[m] != text[n])
+                    return false;
+                m++;
+                n--;
+            }
+            return true;
+        }
+    }
 }
