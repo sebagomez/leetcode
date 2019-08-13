@@ -51,6 +51,7 @@
     <Compile Include="LengthOfLastWord.cs" />
     <Compile Include="LongestSubstring.cs" />
     <Compile Include="MergeKSortedList.cs" />
+    <Compile Include="MicrosoftLongestPalindrome.cs" />
     <Compile Include="MinimumHeightTrees.cs" />
     <Compile Include="NumberOfIslands.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

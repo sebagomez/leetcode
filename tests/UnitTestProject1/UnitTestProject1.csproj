@@ -60,6 +60,7 @@
     <Compile Include="Searching\SearchingTests.cs" />
     <Compile Include="Sorting\SortingTests.cs" />
     <Compile Include="TotalHammingDistanceTests.cs" />
+    <Compile Include="MicrosoftLongestPalindromeTests.cs" />
     <Compile Include="WordLadderIITests.cs" />
   </ItemGroup>
   <ItemGroup>
