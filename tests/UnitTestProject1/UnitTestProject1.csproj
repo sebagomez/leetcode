@@ -45,11 +45,13 @@
     <Compile Include="AmazonShiftedTests.cs" />
     <Compile Include="BuyAndSellStocksTests.cs" />
     <Compile Include="ContainerWithMostWaterTests.cs" />
+    <Compile Include="FloodFillTests.cs" />
     <Compile Include="IntToRomanTests.cs" />
     <Compile Include="KDiffPairsTests.cs" />
     <Compile Include="KLargestElementInArrayTests.cs" />
     <Compile Include="LengthOfLastWordTests.cs" />
     <Compile Include="LongestSubstringTests.cs" />
+    <Compile Include="LowestCommonAncestorTests.cs" />
     <Compile Include="MergeKSortedListTests.cs" />
     <Compile Include="MinimumHeightTreesTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -62,6 +64,8 @@
     <Compile Include="TotalHammingDistanceTests.cs" />
     <Compile Include="MicrosoftLongestPalindromeTests.cs" />
     <Compile Include="WordLadderIITests.cs" />
+    <Compile Include="WordSearchIITests.cs" />
+    <Compile Include="WordSearchTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\LeetCode.csproj">

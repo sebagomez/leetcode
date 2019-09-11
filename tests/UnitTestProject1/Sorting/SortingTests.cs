@@ -13,7 +13,8 @@ namespace UnitTestProject1.Sorting
 			Bubble.Sort,
 			Selection.Sort,
 			Merge.Sort,
-			Quick.Sort
+			Quick.Sort,
+			Insertion.Sort
 		};
 
 		[TestMethod]

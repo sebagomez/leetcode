@@ -45,11 +45,13 @@
     <Compile Include="AmazonShifted.cs" />
     <Compile Include="BuyAndSellStocks.cs" />
     <Compile Include="ContainerWithMostWater.cs" />
+    <Compile Include="FloodFill.cs" />
     <Compile Include="IntToRoman.cs" />
     <Compile Include="KDiffPairs.cs" />
     <Compile Include="KLargestElementInArray.cs" />
     <Compile Include="LengthOfLastWord.cs" />
     <Compile Include="LongestSubstring.cs" />
+    <Compile Include="LowestCommonAncestor.cs" />
     <Compile Include="MergeKSortedList.cs" />
     <Compile Include="MicrosoftLongestPalindrome.cs" />
     <Compile Include="MinimumHeightTrees.cs" />
@@ -61,11 +63,14 @@
     <Compile Include="Search2DMatrix.cs" />
     <Compile Include="Searching\Binary.cs" />
     <Compile Include="Sorting\Bubble.cs" />
+    <Compile Include="Sorting\Insertion.cs" />
     <Compile Include="Sorting\Merge.cs" />
     <Compile Include="Sorting\Quick.cs" />
     <Compile Include="Sorting\Selection.cs" />
     <Compile Include="TotalHammingDistance.cs" />
     <Compile Include="WordLadderII.cs" />
+    <Compile Include="WordSearch.cs" />
+    <Compile Include="WordSearchII.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
