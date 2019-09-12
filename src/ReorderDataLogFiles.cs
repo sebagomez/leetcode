@@ -14,7 +14,7 @@ namespace LeetCode
 		public static string[] ReorderLogFiles(string[] logs)
 		{
 			Dictionary<string, int> letterLogs = new Dictionary<string, int>();
-			Queue<string> digLogs = new Queue<string>();
+			List<string> digLogs = new List<string>();
 
 			for (int i = 0; i <logs.Length; i++)
 			{
@@ -26,7 +26,7 @@ namespace LeetCode
 
 				if (data[0] < 58)
 				{
-					digLogs.Enqueue(line);
+					digLogs.Add(line);
 				}
 				else
 				{
