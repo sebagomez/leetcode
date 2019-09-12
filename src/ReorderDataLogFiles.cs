@@ -6,12 +6,15 @@ using System.Threading.Tasks;
 
 namespace LeetCode
 {
+	/// <summary>
+	/// https://leetcode.com/problems/reorder-data-in-log-files/
+	/// </summary>
 	public class ReorderDataLogFiles
 	{
 		public static string[] ReorderLogFiles(string[] logs)
 		{
 			Dictionary<string, int> letterLogs = new Dictionary<string, int>();
-			List<string> digLogs = new List<string>();
+			Queue<string> digLogs = new Queue<string>();
 
 			for (int i = 0; i <logs.Length; i++)
 			{
@@ -23,7 +26,7 @@ namespace LeetCode
 
 				if (data[0] < 58)
 				{
-					digLogs.Add(line);
+					digLogs.Enqueue(line);
 				}
 				else
 				{
