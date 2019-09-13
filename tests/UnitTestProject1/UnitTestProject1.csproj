@@ -65,6 +65,7 @@
     <Compile Include="TotalHammingDistanceTests.cs" />
     <Compile Include="MicrosoftLongestPalindromeTests.cs" />
     <Compile Include="UniquePathsIIITests.cs" />
+    <Compile Include="VowelSpellcheckerTests.cs" />
     <Compile Include="WordLadderIITests.cs" />
     <Compile Include="WordSearchIITests.cs" />
     <Compile Include="WordSearchTests.cs" />

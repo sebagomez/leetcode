@@ -70,6 +70,7 @@
     <Compile Include="Sorting\Selection.cs" />
     <Compile Include="TotalHammingDistance.cs" />
     <Compile Include="UniquePathsIII.cs" />
+    <Compile Include="VowelSpellchecker.cs" />
     <Compile Include="WordLadderII.cs" />
     <Compile Include="WordSearch.cs" />
     <Compile Include="WordSearchII.cs" />
