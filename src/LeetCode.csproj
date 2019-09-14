@@ -68,7 +68,9 @@
     <Compile Include="Sorting\Merge.cs" />
     <Compile Include="Sorting\Quick.cs" />
     <Compile Include="Sorting\Selection.cs" />
+    <Compile Include="TimeBasedKeyValue.cs" />
     <Compile Include="TotalHammingDistance.cs" />
+    <Compile Include="TrappingRainWater.cs" />
     <Compile Include="UniquePathsIII.cs" />
     <Compile Include="VowelSpellchecker.cs" />
     <Compile Include="WordLadderII.cs" />
