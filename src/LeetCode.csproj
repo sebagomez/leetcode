@@ -57,10 +57,12 @@
     <Compile Include="MinimumHeightTrees.cs" />
     <Compile Include="NumberOfIslands.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RemoveDeplicatesSortedArray.cs" />
     <Compile Include="ReorderDataLogFiles.cs" />
     <Compile Include="RepeatedCharWords.cs" />
     <Compile Include="ReverseInteger.cs" />
     <Compile Include="RomanToInt.cs" />
+    <Compile Include="RotateImage.cs" />
     <Compile Include="Search2DMatrix.cs" />
     <Compile Include="Searching\Binary.cs" />
     <Compile Include="Sorting\Bubble.cs" />

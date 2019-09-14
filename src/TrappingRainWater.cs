@@ -8,7 +8,7 @@ namespace LeetCode
 {
 	public class TrappingRainWater
 	{
-		public int Trap(int[] height)
+		public static int Trap(int[] height)
 		{
 			int max = GetMaxHeight(height);
 			int floorWater = 0;

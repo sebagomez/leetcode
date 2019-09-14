@@ -21,13 +21,27 @@ namespace UnitTestProject1
 		[TestMethod]
 		public void TrappingRainWaterTests2()
 		{
-			int[] height = new int[] {  };
+			int[] height = new int[] { };
 			InternalTest(height, 0);
+		}
+
+		[TestMethod]
+		public void TrappingRainWaterTests3()
+		{
+			int[] height = new int[] { 1, 0, 1 };
+			InternalTest(height, 1);
+		}
+
+		[TestMethod]
+		public void TrappingRainWaterTests4()
+		{
+			int[] height = new int[] { 2, 1, 0, 2 };
+			InternalTest(height, 3);
 		}
 
 		void InternalTest(int[] height, int expected)
 		{
-			int actual = TrappingRainWater.Trap(height);
+			int actual = TrappingRainWater.SmartTrap(height);
 			Assert.AreEqual<int>(expected, actual);
 		}
 	}
