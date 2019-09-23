@@ -52,6 +52,7 @@
     <Compile Include="LengthOfLastWordTests.cs" />
     <Compile Include="LongestSubstringTests.cs" />
     <Compile Include="LowestCommonAncestorTests.cs" />
+    <Compile Include="MaxDepthBinaryTreeTests.cs" />
     <Compile Include="MergeKSortedListTests.cs" />
     <Compile Include="MinimumHeightTreesTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -59,6 +60,7 @@
     <Compile Include="ReorderDataLogFilesTests.cs" />
     <Compile Include="RepeatedCharWordsTests.cs" />
     <Compile Include="ReverseIntegerTests.cs" />
+    <Compile Include="ReverseStringTests.cs" />
     <Compile Include="RomanToIntTests.cs" />
     <Compile Include="RotateImageTests.cs" />
     <Compile Include="Search2DMatrixTests.cs" />
@@ -69,6 +71,7 @@
     <Compile Include="MicrosoftLongestPalindromeTests.cs" />
     <Compile Include="TrappingRainWaterTests.cs" />
     <Compile Include="UniquePathsIIITests.cs" />
+    <Compile Include="ValidPalindromeTests.cs" />
     <Compile Include="VowelSpellcheckerTests.cs" />
     <Compile Include="WordLadderIITests.cs" />
     <Compile Include="WordSearchIITests.cs" />

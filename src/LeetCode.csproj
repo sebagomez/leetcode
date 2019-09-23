@@ -52,6 +52,7 @@
     <Compile Include="LengthOfLastWord.cs" />
     <Compile Include="LongestSubstring.cs" />
     <Compile Include="LowestCommonAncestor.cs" />
+    <Compile Include="MaxDepthBinaryTree.cs" />
     <Compile Include="MergeKSortedList.cs" />
     <Compile Include="MicrosoftLongestPalindrome.cs" />
     <Compile Include="MinimumHeightTrees.cs" />
@@ -61,6 +62,7 @@
     <Compile Include="ReorderDataLogFiles.cs" />
     <Compile Include="RepeatedCharWords.cs" />
     <Compile Include="ReverseInteger.cs" />
+    <Compile Include="ReverseString.cs" />
     <Compile Include="RomanToInt.cs" />
     <Compile Include="RotateImage.cs" />
     <Compile Include="Search2DMatrix.cs" />
@@ -74,6 +76,7 @@
     <Compile Include="TotalHammingDistance.cs" />
     <Compile Include="TrappingRainWater.cs" />
     <Compile Include="UniquePathsIII.cs" />
+    <Compile Include="ValidPalindrome.cs" />
     <Compile Include="VowelSpellchecker.cs" />
     <Compile Include="WordLadderII.cs" />
     <Compile Include="WordSearch.cs" />

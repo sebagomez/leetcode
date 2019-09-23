@@ -1,73 +1,77 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace LeetCode
 {
-    public class MicrosoftLongestPalindrome
-    {
-        public static string LongestPalindrome(string text)
-        {
-            Dictionary<int, int> p = new Dictionary<int, int>();
-            for (int i = 0; i < text.Length; i++)
-            {
-                if (i == 0 || i == text.Length - 1)
-                {
-                    p[i] = 1;
-                    continue;
-                }
+	/// <summary>
+	/// https://leetcode.com/problems/longest-palindromic-substring/
+	/// </summary>
+	public class MicrosoftLongestPalindrome
+	{
+		public static string LongestPalindrome(string s)
+		{
+			if (s.Length == 0)
+				return s;
 
-                int k = 0;
-                for (int j = 1; j <= i; j++)
-                {
-                    k++;
-                    int left = i - j;
-                    int right = i + k;
-                    if (left < 0 || right > text.Length - 1)
-                        break;
+			Dictionary<int, int> aux = new Dictionary<int, int>();
+			int max = int.MinValue;
+			for (int i = 0; i < s.Length; i++)
+			{
+				for (int j = s.Length - 1; j > i; j--)
+				{
+					if (j - i + 1 < max)
+						break;
 
-                    char a = text[left];
-                    char b = text[right];
-                    if (a != b)
-                    {
-                        if (text[i] == b)
-                            j--;
-                        else
-                            break;
-                    }
-                    else
-                    {
-                        p[left] = (right - left) + 1;
+					while (s[i] != s[j] && j >= 0)
+						j--;
 
-                    }
-                }
-            }
+					if (i == j || j < 0)
+						break;
 
+					if (j - i + 1 < max)
+						break;
 
-            int max = 0;
-            int index = -1;
-            foreach (int k in p.Keys)
-            {
-                if (p[k] > max)
-                {
-                    max = p[k];
-                    index = k;
-                }
-            }
+					int left = i;
+					int right = j;
+					while (left < right)
+					{
+						if (s[left] != s[right])
+							break;
+						left++;
+						right--;
+					}
 
-            return text.Substring(index, max);
-        }
+					if (left >= right)
+					{
+						int length = (j - i) + 1;
+						if (length == s.Length)
+							return s;
 
-        public static bool IsPalindrome(string text)
-        {
-            int m = 0;
-            int n = text.Length - 1;
-            while (m < n)
-            {
-                if (text[m] != text[n])
-                    return false;
-                m++;
-                n--;
-            }
-            return true;
-        }
-    }
+						aux[length] = i;
+
+						max = Math.Max(length, max);
+					}
+				}
+			}
+
+			if (max > 0)
+				return s.Substring(aux[max], max);
+			else
+				return s[0].ToString();
+		}
+
+		public static bool IsPalindrome(string text)
+		{
+			int m = 0;
+			int n = text.Length - 1;
+			while (m < n)
+			{
+				if (text[m] != text[n])
+					return false;
+				m++;
+				n--;
+			}
+			return true;
+		}
+	}
 }
