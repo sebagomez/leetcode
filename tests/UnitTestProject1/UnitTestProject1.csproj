@@ -60,6 +60,7 @@
     <Compile Include="ReorderDataLogFilesTests.cs" />
     <Compile Include="RepeatedCharWordsTests.cs" />
     <Compile Include="ReverseIntegerTests.cs" />
+    <Compile Include="ReverseLinkedListTests.cs" />
     <Compile Include="ReverseStringTests.cs" />
     <Compile Include="RomanToIntTests.cs" />
     <Compile Include="RotateImageTests.cs" />

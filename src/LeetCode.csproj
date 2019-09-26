@@ -62,6 +62,7 @@
     <Compile Include="ReorderDataLogFiles.cs" />
     <Compile Include="RepeatedCharWords.cs" />
     <Compile Include="ReverseInteger.cs" />
+    <Compile Include="ReverseLinkedList.cs" />
     <Compile Include="ReverseString.cs" />
     <Compile Include="RomanToInt.cs" />
     <Compile Include="RotateImage.cs" />
