@@ -9,7 +9,7 @@ namespace UnitTestProject1
 	public class MergeKSortedListTests
 	{
 		[TestMethod]
-		public void TestCase1()
+		public void MergeKSortedListTests1()
 		{
 			List<ListNode> lists = new List<ListNode>
 			{

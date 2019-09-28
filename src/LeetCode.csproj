@@ -44,6 +44,7 @@
     <Compile Include="AddArrays.cs" />
     <Compile Include="AmazonShifted.cs" />
     <Compile Include="BuyAndSellStocks.cs" />
+    <Compile Include="ClimbStairs.cs" />
     <Compile Include="ContainerWithMostWater.cs" />
     <Compile Include="FloodFill.cs" />
     <Compile Include="IntToRoman.cs" />
@@ -54,6 +55,7 @@
     <Compile Include="LowestCommonAncestor.cs" />
     <Compile Include="MaxDepthBinaryTree.cs" />
     <Compile Include="MergeKSortedList.cs" />
+    <Compile Include="MergeSortedArray.cs" />
     <Compile Include="MicrosoftLongestPalindrome.cs" />
     <Compile Include="MinimumHeightTrees.cs" />
     <Compile Include="NumberOfIslands.cs" />

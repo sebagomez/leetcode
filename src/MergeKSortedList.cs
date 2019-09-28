@@ -4,6 +4,9 @@ using System.Linq;
 
 namespace LeetCode
 {
+	/// <summary>
+	/// https://leetcode.com/problems/merge-k-sorted-lists/
+	/// </summary>
 	public class MergeKSortedList
 	{
 		public class ListNode
@@ -42,43 +45,39 @@ namespace LeetCode
 		{
 			Dictionary<int, ListNode> index = new Dictionary<int, ListNode>();
 			for (int i = 0; i < lists.Length; i++)
-			{
 				index[i] = lists[i];
-			}
 
-			int min = int.MaxValue;
+			ListNode current = null;
 			ListNode root = null;
-			ListNode last = null;
-
-			while (index.Any( kv => kv.Value != null))
+			bool done = false;
+			while (!done)
 			{
-				foreach (int i in index.Keys)
+				int min = int.MaxValue;
+				done = true;
+				for (int i = 0; i < index.Count; i++)
 				{
-					if(index[i] != null)
-						min = Math.Min(min, index[i].val);
+					if (index[i] != null)
+					{
+						min = Math.Min(index[i].val, min);
+						done = false;
+					}
+
 				}
 
-				foreach (int i in index.Keys)
+				for (int i = 0; i < index.Count; i++)
 				{
 					if (index[i] != null && index[i].val == min)
 					{
+						if (root == null)
+							root = index[i];
+
+						if (current != null)
+							current.next = index[i];
+
+						current = index[i];
 						index[i] = index[i].next;
-						break;
 					}
 				}
-
-				if (root == null)
-				{
-					root = new ListNode(min);
-					last = root;
-				}
-				else
-				{
-					ListNode child = new ListNode(min);
-					last.next = child;
-					last = child;
-				}
-				min = int.MaxValue;
 			}
 
 			return root;

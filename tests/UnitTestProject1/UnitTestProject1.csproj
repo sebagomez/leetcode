@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="AmazonShiftedTests.cs" />
     <Compile Include="BuyAndSellStocksTests.cs" />
+    <Compile Include="ClimbStairsTests.cs" />
     <Compile Include="ContainerWithMostWaterTests.cs" />
     <Compile Include="FloodFillTests.cs" />
     <Compile Include="IntToRomanTests.cs" />
@@ -54,7 +55,9 @@
     <Compile Include="LowestCommonAncestorTests.cs" />
     <Compile Include="MaxDepthBinaryTreeTests.cs" />
     <Compile Include="MergeKSortedListTests.cs" />
+    <Compile Include="MergeSortedArrayTests.cs" />
     <Compile Include="MinimumHeightTreesTests.cs" />
+    <Compile Include="NumberOfIslandsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RemoveDeplicatesSortedArrayTests.cs" />
     <Compile Include="ReorderDataLogFilesTests.cs" />
