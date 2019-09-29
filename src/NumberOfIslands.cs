@@ -52,7 +52,7 @@ namespace LeetCode
 			return islands;
 		}
 
-		public static int NumIslands(char[][] grid)
+		public static int DFSNumIslands(char[][] grid)
 		{
 			int islands = 0;
 			for (int i = 0; i < grid.GetLength(0); i++)

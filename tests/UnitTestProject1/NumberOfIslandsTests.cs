@@ -58,7 +58,7 @@ namespace UnitTestProject1
 
 		void InternalTest(char[][] grid, int expected)
 		{
-			int actual = NumberOfIslands.BFSNumIslands(grid);
+			int actual = NumberOfIslands.NumIslands(grid);
 			Assert.AreEqual<int>(expected, actual);
 		}
 	}
