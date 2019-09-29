@@ -58,8 +58,28 @@ namespace UnitTestProject1
 
 		void InternalTest(char[][] grid, int expected)
 		{
-			int actual = NumberOfIslands.NumIslands(grid);
+			char[][] clone = CloneGrid(grid);
+			int actual = NumberOfIslands.BFSNumIslands(grid);
 			Assert.AreEqual<int>(expected, actual);
+
+			actual = NumberOfIslands.DFSNumIslands(clone);
+			Assert.AreEqual<int>(expected, actual);
+		}
+
+		char[][] CloneGrid(char[][] grid)
+		{
+			char[][] clone = new char[grid.GetLength(0)][];
+			for (int i = 0; i < grid.GetLength(0); i++)
+			{
+				char[] array = new char[grid[i].GetLength(0)];
+				for (int j = 0; j < grid[i].GetLength(0); j++)
+				{
+					array[j] = grid[i][j];
+				}
+				clone[i] = array;
+			}
+
+			return clone;
 		}
 	}
 }
