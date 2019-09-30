@@ -3,21 +3,24 @@
 namespace LeetCode
 {
 	/// <summary>
-	/// https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/description/
+	/// 
 	/// </summary>
 	public class BuyAndSellStocks
 	{
 		public static int MaxProfit(int[] prices)
 		{
-			int sell = 0, prev_sell = 0, buy = int.MinValue, prev_buy;
+			int benefit = 0;
+			int buy = 0;
+			int prev_buy = int.MaxValue;
+			int prev_benefit = int.MinValue;
 			foreach (int price in prices)
 			{
+				buy = Math.Min(price, prev_buy);
+				prev_benefit = benefit;
+				benefit = Math.Max(price - buy, prev_benefit);
 				prev_buy = buy;
-				buy = Math.Max(prev_sell - price, prev_buy);
-				prev_sell = sell;
-				sell = Math.Max(prev_buy + price, prev_sell);
 			}
-			return sell;
+			return benefit;
 		}
 	}
 }
