@@ -27,7 +27,6 @@ namespace LeetCode
 					noVowelsDic[noVowel] = word;
 			}
 
-			string result = "";
 			for (int i = 0; i < queries.Length; i++)
 			{
 				string query = queries[i];
@@ -35,7 +34,7 @@ namespace LeetCode
 					continue;
 				string lower = query.ToLower();
 
-				result = "";
+				string result = "";
 				if (noCapsDic.ContainsKey(lower))
 					result = noCapsDic[lower];
 				else

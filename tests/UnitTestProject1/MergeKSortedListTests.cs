@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using LeetCode;
+using LeetCode.Helpers;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using static LeetCode.MergeKSortedList;
 
 namespace UnitTestProject1
 {
@@ -13,9 +13,9 @@ namespace UnitTestProject1
 		{
 			List<ListNode> lists = new List<ListNode>
 			{
-				new ListNode("1,4,5"),
-				new ListNode("1,3,4"),
-				new ListNode("2,6")
+				ListNode.FromArray(new int[] {1,4,5 }),
+				ListNode.FromArray(new int[] {1,3,4 }),
+				ListNode.FromArray(new int[] {2,6 })
 			};
 
 			InternalTest(lists.ToArray(), "1->1->2->3->4->4->5->6");

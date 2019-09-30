@@ -47,6 +47,10 @@
     <Compile Include="ClimbStairs.cs" />
     <Compile Include="ContainerWithMostWater.cs" />
     <Compile Include="FloodFill.cs" />
+    <Compile Include="Helpers\ListNode.cs" />
+    <Compile Include="Helpers\TreeNode.cs" />
+    <Compile Include="Helpers\Trie.cs" />
+    <Compile Include="Helpers\TrieNode.cs" />
     <Compile Include="IntToRoman.cs" />
     <Compile Include="KDiffPairs.cs" />
     <Compile Include="KLargestElementInArray.cs" />
@@ -75,10 +79,12 @@
     <Compile Include="Sorting\Merge.cs" />
     <Compile Include="Sorting\Quick.cs" />
     <Compile Include="Sorting\Selection.cs" />
+    <Compile Include="SymmetricTree.cs" />
     <Compile Include="TimeBasedKeyValue.cs" />
     <Compile Include="TotalHammingDistance.cs" />
     <Compile Include="TrappingRainWater.cs" />
     <Compile Include="UniquePathsIII.cs" />
+    <Compile Include="ValidateBST.cs" />
     <Compile Include="ValidPalindrome.cs" />
     <Compile Include="VowelSpellchecker.cs" />
     <Compile Include="WordLadderII.cs" />

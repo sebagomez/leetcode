@@ -70,11 +70,13 @@
     <Compile Include="Search2DMatrixTests.cs" />
     <Compile Include="Searching\SearchingTests.cs" />
     <Compile Include="Sorting\SortingTests.cs" />
+    <Compile Include="SymmetricTreeTests.cs" />
     <Compile Include="TimeBasedKeyValueTests.cs" />
     <Compile Include="TotalHammingDistanceTests.cs" />
     <Compile Include="MicrosoftLongestPalindromeTests.cs" />
     <Compile Include="TrappingRainWaterTests.cs" />
     <Compile Include="UniquePathsIIITests.cs" />
+    <Compile Include="ValidateBSTTests.cs" />
     <Compile Include="ValidPalindromeTests.cs" />
     <Compile Include="VowelSpellcheckerTests.cs" />
     <Compile Include="WordLadderIITests.cs" />

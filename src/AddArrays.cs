@@ -1,51 +1,10 @@
-﻿using System.Text;
+﻿using LeetCode.Helpers;
+using System.Text;
 
 namespace LeetCode
 {
 	public class AddArrays
 	{
-		public class ListNode
-		{
-			public int val;
-			public ListNode next;
-			public ListNode(int x) { val = x; }
-
-			public ListNode(int[] array)
-			{
-				bool root = true;
-				ListNode child = null;
-				foreach (int value in array)
-				{
-					ListNode aux = null;
-					if (root)
-					{
-						val = value;
-						root = false;
-						child = this;
-					}
-					else
-					{
-						aux = new ListNode(value);
-						child.next = aux;
-						child = aux;
-					}
-				}
-			}
-
-			public override string ToString()
-			{
-				StringBuilder builder = new StringBuilder($"[{val}");
-				ListNode child = next;
-				while (child != null)
-				{
-					builder.Append($",{child.val}");
-					child = child.next;
-				}
-				builder.Append("]");
-
-				return builder.ToString();
-			}
-		}
 		public static ListNode AddTwoNumbers(ListNode l1, ListNode l2)
 		{
 			ListNode head = new ListNode(0);

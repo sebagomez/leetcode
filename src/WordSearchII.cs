@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LeetCode.Helpers;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -51,15 +52,15 @@ namespace LeetCode
 
 			if (i > 0)
 			{
-				FindWordsHelper(board, i - 1, j, visited, root.Neighbors[board[i][ j]], res, words);
+				FindWordsHelper(board, i - 1, j, visited, root.Neighbors[board[i][j]], res, words);
 			}
 			if (i + 1 < board.GetLength(0))
 			{
-				FindWordsHelper(board, i + 1, j, visited, root.Neighbors[board[i][ j]], res, words);
+				FindWordsHelper(board, i + 1, j, visited, root.Neighbors[board[i][j]], res, words);
 			}
 			if (j > 0)
 			{
-				FindWordsHelper(board, i, j - 1, visited, root.Neighbors[board[i][ j]], res, words);
+				FindWordsHelper(board, i, j - 1, visited, root.Neighbors[board[i][j]], res, words);
 			}
 			if (j + 1 < board[i].GetLength(0))
 			{
@@ -69,47 +70,5 @@ namespace LeetCode
 			visited[i, j] = false;
 		}
 
-	}
-
-	public class TrieNode
-	{
-		public bool IsEnd;
-		public int index;
-		public Dictionary<char, TrieNode> Neighbors;
-		
-		public TrieNode()
-		{
-			this.IsEnd = false;
-			this.Neighbors = new Dictionary<char, TrieNode>();
-		}
-
-	}
-
-	public class Trie
-	{
-		public readonly TrieNode root;
-
-		public Trie()
-		{
-			root = new TrieNode();
-		}
-
-		public void Insert(String word, int i)
-		{
-			var start = root;
-			foreach (var ch in word)
-			{
-				if (!start.Neighbors.ContainsKey(ch))
-				{
-					var newnode = new TrieNode();
-					start.Neighbors.Add(ch, newnode);
-				}
-
-				start = start.Neighbors[ch];
-			}
-
-			start.IsEnd = true;
-			start.index = i;
-		}
 	}
 }
