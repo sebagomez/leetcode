@@ -47,6 +47,7 @@
     <Compile Include="BuyAndSellStocksCooldown.cs" />
     <Compile Include="ClimbStairs.cs" />
     <Compile Include="ContainerWithMostWater.cs" />
+    <Compile Include="FizzBuzz.cs" />
     <Compile Include="FloodFill.cs" />
     <Compile Include="Helpers\ListNode.cs" />
     <Compile Include="Helpers\TreeNode.cs" />
@@ -76,6 +77,7 @@
     <Compile Include="RotateImage.cs" />
     <Compile Include="Search2DMatrix.cs" />
     <Compile Include="Searching\Binary.cs" />
+    <Compile Include="ShuffleAnArray.cs" />
     <Compile Include="Sorting\Bubble.cs" />
     <Compile Include="Sorting\Insertion.cs" />
     <Compile Include="Sorting\Merge.cs" />
@@ -85,6 +87,7 @@
     <Compile Include="TimeBasedKeyValue.cs" />
     <Compile Include="TotalHammingDistance.cs" />
     <Compile Include="TrappingRainWater.cs" />
+    <Compile Include="TwoSum.cs" />
     <Compile Include="UniquePathsIII.cs" />
     <Compile Include="ValidateBST.cs" />
     <Compile Include="ValidPalindrome.cs" />
