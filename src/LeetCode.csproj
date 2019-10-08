@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="AddArrays.cs" />
     <Compile Include="AmazonShifted.cs" />
+    <Compile Include="BuyAndSellStockII.cs" />
     <Compile Include="BuyAndSellStocks.cs" />
     <Compile Include="BuyAndSellStocksCooldown.cs" />
     <Compile Include="ClimbStairs.cs" />
@@ -66,6 +67,7 @@
     <Compile Include="MinimumHeightTrees.cs" />
     <Compile Include="NumberOfIslands.cs" />
     <Compile Include="PalindromeLinkedList.cs" />
+    <Compile Include="PowerOfThree.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RemoveDeplicatesSortedArray.cs" />
     <Compile Include="ReorderDataLogFiles.cs" />
