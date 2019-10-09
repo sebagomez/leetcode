@@ -48,12 +48,14 @@
     <Compile Include="BuyAndSellStocksCooldown.cs" />
     <Compile Include="ClimbStairs.cs" />
     <Compile Include="ContainerWithMostWater.cs" />
+    <Compile Include="ContainsDuplicate.cs" />
     <Compile Include="FizzBuzz.cs" />
     <Compile Include="FloodFill.cs" />
     <Compile Include="Helpers\ListNode.cs" />
     <Compile Include="Helpers\TreeNode.cs" />
     <Compile Include="Helpers\Trie.cs" />
     <Compile Include="Helpers\TrieNode.cs" />
+    <Compile Include="IntersectionOfTwoArraysII.cs" />
     <Compile Include="IntToRoman.cs" />
     <Compile Include="KDiffPairs.cs" />
     <Compile Include="KLargestElementInArray.cs" />
@@ -76,10 +78,12 @@
     <Compile Include="ReverseLinkedList.cs" />
     <Compile Include="ReverseString.cs" />
     <Compile Include="RomanToInt.cs" />
+    <Compile Include="RotateArray.cs" />
     <Compile Include="RotateImage.cs" />
     <Compile Include="Search2DMatrix.cs" />
     <Compile Include="Searching\Binary.cs" />
     <Compile Include="ShuffleAnArray.cs" />
+    <Compile Include="SingleNumber.cs" />
     <Compile Include="Sorting\Bubble.cs" />
     <Compile Include="Sorting\Insertion.cs" />
     <Compile Include="Sorting\Merge.cs" />
