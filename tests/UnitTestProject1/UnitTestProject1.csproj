@@ -49,6 +49,7 @@
     <Compile Include="ClimbStairsTests.cs" />
     <Compile Include="ContainerWithMostWaterTests.cs" />
     <Compile Include="ContainsDuplicateTests.cs" />
+    <Compile Include="FirstUniqueCharacterTests.cs" />
     <Compile Include="FizzBuzzTests.cs" />
     <Compile Include="FloodFillTests.cs" />
     <Compile Include="Helpers\AssertHelper.cs" />
@@ -90,6 +91,7 @@
     <Compile Include="TrappingRainWaterTests.cs" />
     <Compile Include="TwoSumTests.cs" />
     <Compile Include="UniquePathsIIITests.cs" />
+    <Compile Include="ValidAnagramTests.cs" />
     <Compile Include="ValidateBSTTests.cs" />
     <Compile Include="ValidPalindromeTests.cs" />
     <Compile Include="ValidSudokuTests.cs" />

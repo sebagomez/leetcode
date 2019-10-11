@@ -50,6 +50,7 @@
     <Compile Include="ClimbStairs.cs" />
     <Compile Include="ContainerWithMostWater.cs" />
     <Compile Include="ContainsDuplicate.cs" />
+    <Compile Include="FirstUniqueCharacter.cs" />
     <Compile Include="FizzBuzz.cs" />
     <Compile Include="FloodFill.cs" />
     <Compile Include="Helpers\ListNode.cs" />
@@ -98,6 +99,7 @@
     <Compile Include="TrappingRainWater.cs" />
     <Compile Include="TwoSum.cs" />
     <Compile Include="UniquePathsIII.cs" />
+    <Compile Include="ValidAnagram.cs" />
     <Compile Include="ValidateBST.cs" />
     <Compile Include="ValidPalindrome.cs" />
     <Compile Include="ValidSudoku.cs" />
