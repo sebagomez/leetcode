@@ -84,6 +84,7 @@
     <Compile Include="ShuffleAnArrayTests.cs" />
     <Compile Include="SingleNumberTests.cs" />
     <Compile Include="Sorting\SortingTests.cs" />
+    <Compile Include="StringToIntegerTests.cs" />
     <Compile Include="SymmetricTreeTests.cs" />
     <Compile Include="TimeBasedKeyValueTests.cs" />
     <Compile Include="TotalHammingDistanceTests.cs" />
