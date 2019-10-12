@@ -8,7 +8,7 @@ namespace LeetCode
 {
 	public class ImplementStrStr
 	{
-		public static int StrStr1(string haystack, string needle)
+		public static int StrStr(string haystack, string needle)
 		{
 			if (string.IsNullOrWhiteSpace(needle))
 				return 0;

@@ -63,6 +63,7 @@
     <Compile Include="KDiffPairs.cs" />
     <Compile Include="KLargestElementInArray.cs" />
     <Compile Include="LengthOfLastWord.cs" />
+    <Compile Include="LongestCommonPrefix.cs" />
     <Compile Include="LongestSubstring.cs" />
     <Compile Include="LowestCommonAncestor.cs" />
     <Compile Include="MaxDepthBinaryTree.cs" />

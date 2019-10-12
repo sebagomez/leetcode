@@ -59,6 +59,7 @@
     <Compile Include="KDiffPairsTests.cs" />
     <Compile Include="KLargestElementInArrayTests.cs" />
     <Compile Include="LengthOfLastWordTests.cs" />
+    <Compile Include="LongestCommonPrefixTests.cs" />
     <Compile Include="LongestSubstringTests.cs" />
     <Compile Include="LowestCommonAncestorTests.cs" />
     <Compile Include="MaxDepthBinaryTreeTests.cs" />
