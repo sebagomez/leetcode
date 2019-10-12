@@ -57,6 +57,7 @@
     <Compile Include="Helpers\TreeNode.cs" />
     <Compile Include="Helpers\Trie.cs" />
     <Compile Include="Helpers\TrieNode.cs" />
+    <Compile Include="ImplementStrStr.cs" />
     <Compile Include="IntersectionOfTwoArraysII.cs" />
     <Compile Include="IntToRoman.cs" />
     <Compile Include="KDiffPairs.cs" />

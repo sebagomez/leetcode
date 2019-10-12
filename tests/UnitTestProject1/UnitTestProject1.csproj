@@ -53,6 +53,7 @@
     <Compile Include="FizzBuzzTests.cs" />
     <Compile Include="FloodFillTests.cs" />
     <Compile Include="Helpers\AssertHelper.cs" />
+    <Compile Include="ImplementStrStrTests.cs" />
     <Compile Include="IntersectionOfTwoArraysIITests.cs" />
     <Compile Include="IntToRomanTests.cs" />
     <Compile Include="KDiffPairsTests.cs" />
