@@ -9,7 +9,7 @@ namespace LeetCode
 		{
 			ListNode head = new ListNode(0);
 			ListNode aux = head;
-			int sum = 0, extra = 0;
+			int sum, extra = 0;
 			while (l1 != null || l2 != null)
 			{
 				sum = (l1 == null ? 0 : l1.val) + (l2 == null ? 0 : l2.val) + extra;
