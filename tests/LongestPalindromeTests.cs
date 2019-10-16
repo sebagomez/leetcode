@@ -1,0 +1,29 @@
+﻿using Leetcode;
+using System;
+using System.Collections.Generic;
+using System.Text;
+using Xunit;
+
+namespace LeetcodeTests
+{
+	public class LongestPalindromeTests
+	{
+		[Fact]
+		public void LongestPalindromeTests1()
+		{
+			InternalTest("abccccdd", 7);
+		}
+
+		[Fact]
+		public void LongestPalindromeTests2()
+		{
+			InternalTest("civilwartestingwhetherthatnaptionoranynartionsoconceivedandsodedicatedcanlongendureWeareqmetonagreatbattlefiemldoftzhatwarWehavecometodedicpateaportionofthatfieldasafinalrestingplaceforthosewhoheregavetheirlivesthatthatnationmightliveItisaltogetherfangandproperthatweshoulddothisButinalargersensewecannotdedicatewecannotconsecratewecannothallowthisgroundThebravelmenlivinganddeadwhostruggledherehaveconsecrateditfaraboveourpoorponwertoaddordetractTgheworldadswfilllittlenotlenorlongrememberwhatwesayherebutitcanneverforgetwhattheydidhereItisforusthelivingrathertobededicatedheretotheulnfinishedworkwhichtheywhofoughtherehavethusfarsonoblyadvancedItisratherforustobeherededicatedtothegreattdafskremainingbeforeusthatfromthesehonoreddeadwetakeincreaseddevotiontothatcauseforwhichtheygavethelastpfullmeasureofdevotionthatweherehighlyresolvethatthesedeadshallnothavediedinvainthatthisnationunsderGodshallhaveanewbirthoffreedomandthatgovernmentofthepeoplebythepeopleforthepeopleshallnotperishfromtheearth", 983);
+		}
+
+		void InternalTest(string s, int expected)
+		{
+			int actual = LongestPalindrome.Solve(s);
+			Assert.Equal(expected, actual);
+		}
+	}
+}

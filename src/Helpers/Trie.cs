@@ -32,5 +32,20 @@ namespace LeetCode.Helpers
 			start.IsEnd = true;
 			start.index = i;
 		}
+
+		public bool ContainsWord(string word)
+		{
+			TrieNode current = root;
+			for (int i = 0; i < word.Length; i++)
+			{
+				char c = word[i];
+				if (!current.Neighbors.ContainsKey(c))
+					return false;
+
+				current = current.Neighbors[c];
+			}
+
+			return true;
+		}
 	}
 }

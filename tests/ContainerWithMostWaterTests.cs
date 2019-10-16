@@ -30,6 +30,12 @@ namespace LeetcodeTests
 			InternalTest(new int[] { 1, 2, 4, 3 }, 4);
 		}
 
+		[Fact]
+		public void Test5()
+		{
+			InternalTest(new int[] { 1, 8, 6, 2, 5, 4, 8, 3, 7 }, 49);
+		}
+
 		void InternalTest(int[] height, int expected)
 		{
 			int value = ContainerWithMostWater.SmartMaxArea(height);

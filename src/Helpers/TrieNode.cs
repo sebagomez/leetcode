@@ -18,5 +18,10 @@ namespace LeetCode.Helpers
 			this.Neighbors = new Dictionary<char, TrieNode>();
 		}
 
+		public override string ToString()
+		{
+			return string.Join(",", this.Neighbors.Keys);
+		}
+
 	}
 }
