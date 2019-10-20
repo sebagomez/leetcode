@@ -19,6 +19,18 @@ namespace LeetcodeTests.Helpers
 			}
 		}
 
+		public static void AssertMatrixes(char[][] expected, char[][] actual)
+		{
+			Assert.Equal<int>(expected.GetLength(0), actual.GetLength(0));
+			for (int i = 0; i < actual.GetLength(0); i++)
+			{
+				for (int j = 0; j < actual[i].GetLength(0); j++)
+				{
+					Assert.Equal<int>(expected[i][j], actual[i][j]);
+				}
+			}
+		}
+
 		public static void AssertListNode(ListNode expected, ListNode actual)
 		{
 			while (actual != null || expected != null)
