@@ -43,5 +43,10 @@ namespace LeetcodeTests.Helpers
 			Assert.Null(actual);
 			Assert.Null(expected);
 		}
+
+		public static void AssertTreeNode(TreeNode expected, TreeNode actual)
+		{
+			Assert.Equal<int>(expected.val, actual.val);
+		}
 	}
 }
