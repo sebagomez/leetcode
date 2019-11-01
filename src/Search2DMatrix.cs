@@ -11,24 +11,21 @@ namespace LeetCode
 	/// </summary>
 	public class Search2DMatrix
 	{
-		public static bool SearchMatrix(int[,] matrix, int target)
+		public static bool SearchMatrix(int[][] matrix, int target)
 		{
-			int lengthX = matrix.GetLength(0);
-			int lengthY = matrix.GetLength(1);
-
-			if (lengthX == 0 || lengthY == 0)
-				return false;
-
-			for (int i = 0; i < lengthX; i++)
+			for (int i = 0; i < matrix.GetLength(0); i++)
 			{
-				if (matrix[i, 0] > target)
+				if (matrix[i].GetLength(0) == 0)
 					return false;
 
-				if (matrix[i, 0] <= target && matrix[i, lengthY - 1] >= target)
+				if (matrix[i][0] > target)
+					return false;
+
+				if (matrix[i][0] <= target && matrix[i][matrix[i].GetLength(0) - 1] >= target)
 				{
-					for (int j = 0; j < lengthY; j++)
+					for (int j = 0; j < matrix[i].GetLength(0); j++)
 					{
-						if (matrix[i, j] == target)
+						if (matrix[i][j] == target)
 							return true;
 					}
 
