@@ -1,4 +1,6 @@
-﻿namespace LeetCode.Sorting
+﻿using System;
+
+namespace LeetCode.Sorting
 {
 	public class Quick
 	{
@@ -14,34 +16,33 @@
 
 		static int[] QuickSort(int[] arr, int left, int right)
 		{
-			if (left == right)
+			if (right < left)
 				return arr;
 
-			int originalLeft = left;
-			int originalRight = right;
-			int pivotPos = (left + right) / 2;
-			int pivot = arr[pivotPos];
-			while (left <= right)
-			{
-				while (arr[left] < pivot)
-					left++;
+			int pivot = FindPivot(arr, left, right); //<-- I'm choosing the last item
 
-				while (arr[right] > pivot)
-					right--;
+			QuickSort(arr, left, pivot - 1);
+			QuickSort(arr, pivot + 1, right);
 
-				if (left <= right)
-					Swap(arr, left, right);
-
-				left++;
-				right--;
-			}
-
-			if (pivotPos != originalRight)
-				QuickSort(arr, originalLeft, pivotPos);
-			if (pivotPos != originalLeft)
-				QuickSort(arr, pivotPos, originalRight);
 
 			return arr;
+		}
+
+		private static int FindPivot(int[] arr, int left, int right)
+		{
+			int last = left;
+			for (int i = left; i < right; i++)
+			{
+				if (arr[i] <= arr[right])
+				{
+					Swap(arr, i, last);
+					last++;
+				}
+			}
+
+			Swap(arr, right, last);
+
+			return last;
 		}
 
 		static int[] Lomuto(int[] arr, int left, int right)
@@ -111,6 +112,9 @@
 
 		static void Swap(int[] arr, int a, int b)
 		{
+			if (a == b)
+				return;
+
 			int aux = arr[a];
 			arr[a] = arr[b];
 			arr[b] = aux;
